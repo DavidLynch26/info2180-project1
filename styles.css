@@ -35,6 +35,47 @@ main section.learn-about div.container div.cards div.card {
     box-shadow: 0px 5px #888;
 }
 
+main section.learn-about div.container div.cards div.card div.card-body h3{
+    font-size: 21;
+    color: #48BB78;
+}
+
+main section.testing div.container {
+    background-color: #4A5568;
+    color: white;
+    border-radius: 5px;
+}
+
+main section.testing div.container div.cta a {
+    color: #48BB78;
+}
+
+main section.stories div.container h2, p a{
+    color: #5A67D8;
+} 
+
+main section.stories div.container h3 {
+    font-size: 18px;
+}
+
+main section.stories div.container img {
+    border-radius: 50%;
+}
+
+main section.newsletter {
+    background-color: #48BB78;
+    color: white;
+}
+
+main section.newsletter div.container form button {
+    background-color: #5A67D8;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+}
+
 .container {
     margin: 0 auto;
     max-width: 960px;
