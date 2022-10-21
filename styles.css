@@ -4,8 +4,18 @@ body {
     font-size: 16px;
 }
 
+footer {
+    background-color: #4A5568;
+    color: white;
+}
+
 header {
+    display: flex;
     background-color: white;
+}
+
+ul {
+    list-style: none;
 }
 
 header div.container > * {
@@ -71,9 +81,8 @@ main section.newsletter div.container form button {
     background-color: #5A67D8;
 }
 
-footer {
-    background-color: #4A5568;
-    color: white;
+body {
+    display: grid;
 }
 
 .container {
