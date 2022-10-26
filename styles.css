@@ -1,12 +1,92 @@
 /* Add your CSS to this file */
+header div.container {
+    display: flex;
+    flex-direction: row;
+}
+
 body {
     margin: 0;
     font-size: 16px;
+    display: grid;
+}
+
+section.newsletter {
+    text-align: center;
+}
+
+section.newsletter div.container form {
+    display: flex;
+    flex-direction: row;
 }
 
 footer {
     background-color: #4A5568;
     color: white;
+}
+
+img {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+section.overview-hero div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section.overview-hero div.container div.overview-hero-image img {
+    content: url("overviewImage.jpg");
+    padding-right: 50px;
+}
+
+section.learn-about div.container div.cards div.card {
+    text-align: center;
+    width: 300px;
+}
+
+section.learn-about div.container div.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.learn-about div.container div.cards div.card:nth-of-type(1) img{
+    content: url("aiImage.jpg");
+}
+
+section.learn-about div.container div.cards div.card:nth-of-type(2) img{
+    content: url("fitnessImage.jpg");
+}
+
+section.learn-about div.container div.cards div.card:nth-of-type(3) img{
+    content: url("healthyImage.jpg");
+}
+
+section.learn-about div.container div.cards div.card:nth-of-type(2) img{
+    content: url("fitnessImage.jpg");
+}
+
+section.stories div.container article {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+section.stories div.container article img{
+    padding-right: 20px;
+}
+
+section.stories div.container article:nth-of-type(1) img{
+    content: url("ChristopherTurkImage.jpg");
+}
+
+section.stories div.container article:nth-of-type(2) img{
+    content: url("covidImage.jpg");
 }
 
 header {
@@ -31,59 +111,55 @@ header div.container ul > *:hover {
     color: #5A67D8;
 }
 
-main section.overview-hero {
+section.overview-hero {
     background-color: #E2E8F0;
 }
 
-main section.learn-about h2 {
+section.learn-about h2 {
     font-size: 24px;
     color: #48BB78;
 }
 
-main section.learn-about div.container div.cards div.card {
+section.learn-about div.container div.cards div.card {
     border-color: #E2E8F0;
     border-radius: 5px;
     box-shadow: 0px 5px #888;
 }
 
-main section.learn-about div.container div.cards div.card div.card-body h3{
+section.learn-about div.container div.cards div.card div.card-body h3{
     font-size: 21;
     color: #48BB78;
 }
 
-main section.testing div.container {
+section.testing div.container {
     background-color: #4A5568;
     color: white;
     border-radius: 5px;
 }
 
-main section.testing div.container div.cta a {
+section.testing div.container div.cta a {
     color: #48BB78;
 }
 
-main section.stories div.container h2, p a{
+section.stories div.container h2, p a{
     color: #5A67D8;
 } 
 
-main section.stories div.container h3 {
+section.stories div.container h3 {
     font-size: 18px;
 }
 
-main section.stories div.container img {
+section.stories div.container img {
     border-radius: 50%;
 }
 
-main section.newsletter {
+section.newsletter {
     background-color: #48BB78;
     color: white;
 }
 
-main section.newsletter div.container form button {
+section.newsletter div.container form button {
     background-color: #5A67D8;
-}
-
-body {
-    display: grid;
 }
 
 .container {
