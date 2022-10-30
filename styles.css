@@ -1,27 +1,15 @@
 /* Add your CSS to this file */
-header div.container {
-    display: flex;
-    flex-direction: row;
-}
-
 body {
     margin: 0;
     font-size: 16px;
-    display: grid;
 }
 
-section.newsletter {
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
-section.newsletter div.container form {
-    display: flex;
-    flex-direction: row;
-}
-
-footer {
-    background-color: #4A5568;
-    color: white;
+ul {
+    list-style: none;
 }
 
 img {
@@ -30,11 +18,57 @@ img {
     width: 300px;
 }
 
+header {
+    margin: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+header div.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header div.container nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    text-align: right;
+}
+
+header div.container nav ul li {
+    margin: 10px;
+}
+
+header div.container {
+    font-size: 18px;
+}
+
+header div.container ul li{
+    color: #6b7280;
+}
+
+header div.container ul li :hover {
+    color: #5A67D8;
+}
+
+header div.container ul:link {
+    text-decoration: none;
+}
+
+section.overview-hero {
+    background-color: #E2E8F0;
+}
+
 section.overview-hero div.container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 section.overview-hero div.container div.overview-hero-image img {
@@ -42,30 +76,79 @@ section.overview-hero div.container div.overview-hero-image img {
     padding-right: 50px;
 }
 
+section.learn-about div.container div.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 section.learn-about div.container div.cards div.card {
     text-align: center;
     width: 300px;
 }
 
-section.learn-about div.container div.cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-section.learn-about div.container div.cards div.card:nth-of-type(1) img{
+section.learn-about div.container div.cards div.card:nth-of-type(1) img {
     content: url("aiImage.jpg");
 }
 
-section.learn-about div.container div.cards div.card:nth-of-type(2) img{
+section.learn-about div.container div.cards div.card:nth-of-type(2) img {
     content: url("fitnessImage.jpg");
 }
 
-section.learn-about div.container div.cards div.card:nth-of-type(3) img{
+section.learn-about div.container div.cards div.card:nth-of-type(3) img {
     content: url("healthyImage.jpg");
 }
 
-section.learn-about div.container div.cards div.card:nth-of-type(2) img{
+section.learn-about div.container div.cards div.card:nth-of-type(2) img {
     content: url("fitnessImage.jpg");
+}
+
+section.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+section.learn-about div.container div.cards div.card {
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px #888;
+}
+
+section.learn-about div.container div.cards div.card div.card-body h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+section.testing div.container {
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    background-color: #4A5568;
+    color: white;
+    height: 200px;
+    text-align: left;
+}
+
+section.testing div.container div.cta {
+    width: 20%;
+    text-align: center;
+    background-color: #48BB78;
+    border-radius: 5px;
+}
+
+section.testing div.container div.cta a{
+    color: white;
+}
+
+section.stories div.container h2, p a {
+    color: #5A67D8;
+} 
+
+section.stories div.container h3 {
+    font-size: 18px;
+}
+
+section.stories div.container img {
+    border-radius: 50%;
 }
 
 section.stories div.container article {
@@ -73,8 +156,6 @@ section.stories div.container article {
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 section.stories div.container article img{
@@ -89,77 +170,55 @@ section.stories div.container article:nth-of-type(2) img{
     content: url("covidImage.jpg");
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
-
-ul {
-    list-style: none;
-}
-
-header div.container > * {
-    font-size: 18px;
-}
-
-header div.container ul > * {
-    color: #6b7280;
-}
-
-header div.container ul > *:hover {
-    color: #5A67D8;
-}
-
-section.overview-hero {
-    background-color: #E2E8F0;
-}
-
-section.learn-about h2 {
-    font-size: 24px;
-    color: #48BB78;
-}
-
-section.learn-about div.container div.cards div.card {
-    border-color: #E2E8F0;
-    border-radius: 5px;
-    box-shadow: 0px 5px #888;
-}
-
-section.learn-about div.container div.cards div.card div.card-body h3{
-    font-size: 21;
-    color: #48BB78;
-}
-
-section.testing div.container {
-    background-color: #4A5568;
-    color: white;
-    border-radius: 5px;
-}
-
-section.testing div.container div.cta a {
-    color: #48BB78;
-}
-
-section.stories div.container h2, p a{
-    color: #5A67D8;
-} 
-
-section.stories div.container h3 {
-    font-size: 18px;
-}
-
-section.stories div.container img {
-    border-radius: 50%;
-}
-
 section.newsletter {
+    text-align: center;
     background-color: #48BB78;
     color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+section.newsletter div.container {
+    display: flex;
+    line-height: 5px;
+    justify-content: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.newsletter div.container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
 }
 
 section.newsletter div.container form button {
     background-color: #5A67D8;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    margin-left: 10px;
+}
+
+section.newsletter div.container form input {
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    display: flex;
+    background-color: #4A5568;
+    color: white;
+    height: 50px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
