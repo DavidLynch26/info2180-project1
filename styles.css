@@ -14,8 +14,8 @@ ul {
 
 img {
     object-fit: cover;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 
 header {
@@ -68,7 +68,6 @@ section.overview-hero div.container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 section.overview-hero div.container div.overview-hero-image img {
@@ -118,19 +117,26 @@ section.learn-about div.container div.cards div.card div.card-body h3 {
     color: #48BB78;
 }
 
-section.testing div.container {
-    align-items: center;
-    margin-top: 50px;
-    display: flex;
+section.testing {
     background-color: #4A5568;
+    margin-top: 50px;
+    padding: 0px;
+    margin-bottom: 100px;
+}
+
+section.testing div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: white;
-    height: 200px;
-    text-align: left;
+    height: 300px;
 }
 
 section.testing div.container div.cta {
     width: 20%;
-    text-align: center;
+    height: 20%;
+    text-align: center;    
+    justify-content: center;
     background-color: #48BB78;
     border-radius: 5px;
 }
@@ -183,7 +189,6 @@ section.newsletter div.container {
     line-height: 5px;
     justify-content: center;
     flex-direction: column;
-    word-wrap: break-word;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -194,6 +199,7 @@ section.newsletter div.container form {
     justify-content: center;
     flex-direction: row;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 section.newsletter div.container form button {
